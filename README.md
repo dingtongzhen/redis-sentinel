@@ -27,6 +27,7 @@ spring.redis.password=123456
         System.out.println(stringRedis.get("name"));
     }
 5、成功输出展示：
+
 2020-08-08 11:21:13.511  INFO 7884 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2020-08-08 11:21:14.012  INFO 7884 --- [           main] redis.clients.jedis.JedisSentinelPool    : Trying to find master from available Sentinels...
 2020-08-08 11:21:14.074  INFO 7884 --- [           main] redis.clients.jedis.JedisSentinelPool    : Redis master running at 192.168.111.131:7002, starting Sentinel listeners...
