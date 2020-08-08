@@ -1,5 +1,4 @@
-# 接上两篇文章:https://my.oschina.net/dtz/blog/4467089
-              https://my.oschina.net/dtz/blog/4467179
+# 接上两篇文章:https://my.oschina.net/dtz/blog/4467089 ;https://my.oschina.net/dtz/blog/4467179
 redis-sentinel
 1、一主两从三哨兵模式，实现springboot项目的链接使用示例
 2、maven主要依赖：
