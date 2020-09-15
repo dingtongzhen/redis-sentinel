@@ -1,7 +1,11 @@
 # 接上两篇文章:https://my.oschina.net/dtz/blog/4467089 ;https://my.oschina.net/dtz/blog/4467179
+
 参考资料：https://docs.spring.io/spring-data/redis/docs/2.3.2.RELEASE/reference/html/#redis:sentinel
+
 redis-sentinel
+
 1、一主两从三哨兵模式，实现springboot项目的链接使用示例
+
 2、maven主要依赖：
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -16,17 +20,22 @@ redis-sentinel
         <dependency>
         
 3、哨兵配置：
+
  #哨兵的配置列表
+ 
 spring.redis.sentinel.master=mymaster
 spring.redis.sentinel.nodes=192.168.111.129:27000,192.168.111.130:27001,192.168.111.131:27002
 spring.redis.sentinel.password=123456
 spring.redis.password=123456
+
 4、测试示例：
+
  @Test
     public void testString (){
         stringRedis.set("name", "dingzhen");
         System.out.println(stringRedis.get("name"));
     }
+    
 5、成功输出展示：
 
 2020-08-08 11:21:13.511  INFO 7884 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
