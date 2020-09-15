@@ -24,8 +24,11 @@ redis-sentinel
  #哨兵的配置列表
  
 spring.redis.sentinel.master=mymaster
+
 spring.redis.sentinel.nodes=192.168.111.129:27000,192.168.111.130:27001,192.168.111.131:27002
+
 spring.redis.sentinel.password=123456
+
 spring.redis.password=123456
 
 4、测试示例：
